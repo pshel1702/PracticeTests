@@ -94,7 +94,7 @@ def smallest_int(numbers):
     """
 
     #Check if input list is empty. If yes, return None, if not proceed with the rest.
-    # Sort the input list in ascending order
+    #Sort the input list in ascending order
     #Return the first element of the list
 
     if numbers==[]:
@@ -121,8 +121,17 @@ def largest_int(numbers):
         >>> largest_int([]) is None
         True
     """
+    #Check if input list is empty.
+    #If yes, return None.
+    #If not, sort the list.
+    #Return the value at the last index
 
-    return 0
+    if numbers==[]:
+        return None
+    else:
+        numbers.sort()
+        return numbers[-1]
+
 
 
 def halvesies(numbers):
