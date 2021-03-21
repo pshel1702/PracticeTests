@@ -196,7 +196,14 @@ def sum_numbers(numbers):
         0
     """
 
-    return None
+    #Loop through the list
+    #Add the current list element to the sum of the previous element
+    #Return sum
+    sum = 0
+    for num in numbers:
+        sum += num
+
+    return sum
 
 
 def mult_numbers(numbers):
