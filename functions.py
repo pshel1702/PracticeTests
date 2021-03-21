@@ -80,7 +80,7 @@ def hello_world():
 #    prints "Hi" followed by the name.
 
 def say_hi(name):
-    """Prints Hi _name_ to the terminal""""
+    """Prints Hi _name_ to the terminal"""
     print(f'Hi {name}')
 
 
