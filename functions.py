@@ -159,6 +159,31 @@ def total_meal_price(meal_price, tip_perc=0.15):
 #    unpack what is returned into two variables --- sign and parity (whether
 #    it's even or odd). Print sign and parity.
 
+def sign_and_parity(num):
+    #Check whether num is greater than or equal to zero, accordingly decide sign 
+    #Check remainder on dividing by two using mod operator, accordingly decide even or odd 
+    #Append results to a list
+    
+
+    sign_parity=[]
+
+    if num>0:
+        sign_parity.append("Positive")
+        if num%2 == 0:
+            sign_parity.append("Even")
+        else:
+            sign_parity.append("Odd")
+    else:
+        sign_parity.append("Negative")
+        if num%2 == 0:
+            sign_parity.append("Even")
+        else:
+            sign_parity.append("Odd")
+
+    print (sign_parity)
+
+   
+
 
 ###############################################################################
 
