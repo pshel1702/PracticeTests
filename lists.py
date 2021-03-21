@@ -17,7 +17,10 @@ def print_list(items):
         9
     """
 
-    print("the wrong thing")
+    #For every item in the list, call print function
+
+    for value in items:
+        print (value)
 
 
 def long_words(words):
@@ -36,8 +39,14 @@ def long_words(words):
         >>> long_words(["all", "are", "tiny"])
         []
     """
+    #Loop through the entire input list, and call the len() function on every element.
+    #If len() is greater than 4, append to result list 
 
-    return ['the wrong thing']
+    result_list = []
+    for word in words:
+        if len(word)>4:
+            result_list.append(word)
+    return (result_list)
 
 
 def n_long_words(words, n):
@@ -53,6 +62,10 @@ def n_long_words(words, n):
         >>> n_long_words(["I", "like", "apples", "bananas", "you"], 5)
         ['apples', 'bananas']
     """
+
+    #Loop through the entire list, call the len() function on every word
+    #If len>n, append to result list
+    #Return result list
 
     return ['the wrong thing']
 
