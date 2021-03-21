@@ -94,6 +94,9 @@ def print_product(num1, num2):
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer
 #    and prints the string that many times
+def repeat_string(input_string, num):
+    """Print the input string num number of times"""
+    print(input_string*num)
 
 
 
