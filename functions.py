@@ -72,19 +72,29 @@ PART TWO:
 #    prints "Hello World".
 
 def hello_world():
+    """Prints Hello World to the terminal"""
     print("Hello World")
 
 
 # 2. Write a function called 'say_hi' that takes a name as a string and
 #    prints "Hi" followed by the name.
 
+def say_hi(name):
+    """Prints Hi _name_ to the terminal""""
+    print(f'Hi {name}')
+
 
 # 3. Write a function called 'print_product' that takes two integers and
 #    multiplies them together. Print the result.
 
+def print_product(num1, num2):
+    """Print the product of two integers"""
+    print(num1*num2)
+
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer
 #    and prints the string that many times
+
 
 
 # 5. Write a function called 'print_sign' that takes an integer and prints
