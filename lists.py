@@ -168,7 +168,16 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    return []
+    #Initiate empty list
+    #Call the len function on each word in list, append this value to the result list
+    #Return result list
+
+    word_length = []
+
+    for word in words:
+        word_length.append(len(word))
+
+    return word_length
 
 
 def sum_numbers(numbers):
