@@ -405,13 +405,13 @@ def duplicates(items):
     #Loop through the list.
     #If duplicate is found, save the item in a new list
     #Sort the dup_list at the end of the code
-
+    #Credit to https://www.geeksforgeeks.org/python-count-occurrences-element-list/ for syntax on how to use list.count()
     dup_list = []
 
-    for i in range(len(items)-1):
-        if items[i] == items[i+1]:
-            if items[i] not in dup_list:
-                dup_list.append(items[i])
+    for item in items:
+        if items.count(item) > 1:
+            if item not in dup_list:
+                dup_list.append(item)
     
     dup_list.sort()
 
