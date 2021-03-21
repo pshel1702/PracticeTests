@@ -93,7 +93,16 @@ def smallest_int(numbers):
         True
     """
 
-    return 100
+    #Check if input list is empty. If yes, return None, if not proceed with the rest.
+    # Sort the input list in ascending order
+    #Return the first element of the list
+
+    if numbers==[]:
+        return None
+    else:
+        numbers.sort()
+        return numbers[0]
+
 
 
 def largest_int(numbers):
