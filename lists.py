@@ -149,7 +149,14 @@ def halvesies(numbers):
         [0.5, 2.5]
     """
 
-    return []
+    #Divide input list by 2
+    #Return result of division with 1f value
+
+    halvesie = []
+    for num in numbers:
+        halvesie.append(num/2)
+    
+    return halvesie
 
 
 def word_lengths(words):
