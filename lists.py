@@ -67,7 +67,13 @@ def n_long_words(words, n):
     #If len>n, append to result list
     #Return result list
 
-    return ['the wrong thing']
+    result_list=[]
+
+    for word in words:
+        if len(word)>n:
+            result_list.append(word)
+
+    return result_list
 
 
 def smallest_int(numbers):
