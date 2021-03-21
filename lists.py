@@ -374,9 +374,8 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
     #Use the slice function to return reversed list
-    temp_list = []
-    temp_list[:] = items[::-1]
-    items = temp_list
+    items[:] = items[::-1]
+    
 
 
 def duplicates(items):
