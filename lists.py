@@ -374,7 +374,9 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
     #Use the slice function to return reversed list
-    return items[::-1]
+    temp_list = []
+    temp_list[:] = items[::-1]
+    items = temp_list
 
 
 def duplicates(items):
@@ -400,7 +402,20 @@ def duplicates(items):
         ['apple', 'apple', 'berry']
     """
 
-    return []
+    #Loop through the list.
+    #If duplicate is found, save the item in a new list
+    #Sort the dup_list at the end of the code
+
+    dup_list = []
+
+    for i in range(len(items)-1):
+        if items[i] == items[i+1]:
+            if items[i] not in dup_list:
+                dup_list.append(items[i])
+    
+    dup_list.sort()
+
+    return dup_list
 
 
 def find_letter_indices(words, letter):
