@@ -443,7 +443,16 @@ def find_letter_indices(words, letter):
     `None`.)
     """
 
-    return []
+    indices = []
+
+    for word in words:
+        if letter not in word:
+            indices.append(None)
+        for i in range(len(word)):
+            if word[i] == letter:
+                indices.append(i)
+            
+    return indices
 
 
 #####################################################################
