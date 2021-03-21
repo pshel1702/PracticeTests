@@ -226,7 +226,16 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    #Iterate through a list
+    #Multiply the current list value with the product of the previous elements
+    #Return product
+
+    prod = 1
+
+    for num in numbers:
+        prod *= num
+
+    return prod
 
 
 def join_strings(words):
