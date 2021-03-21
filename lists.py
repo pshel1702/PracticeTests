@@ -257,7 +257,14 @@ def join_strings(words):
     #Loop through the input list
     #Concatenate the current list item with the previous and continue
     #Return the final value
-
+    
+    if len(words) == 0:
+        return ''
+    else:
+        result_list = words[0]
+        for i in range(1,len(words)):
+            result_list = result_list+words[i]
+        return(result_list)
 
 
 def average(numbers):
@@ -307,8 +314,14 @@ def join_strings_with_comma(words):
         'Pretzel'
     """
 
-    
-
+    if len(words) == 1:
+        return words[0]
+    else:
+        result_list = words[0]+', '
+        for i in range(1,len(words)-1):
+            result_list = result_list+words[i]+', '
+        result_list = result_list+words[-1]
+        return(result_list)
 
 
 def reverse_list(items):
@@ -360,8 +373,8 @@ def reverse_list_in_place(items):
         >>> orig
         ['I', 'love', 'cookies']
     """
-
-    return []
+    #Use the slice function to return reversed list
+    return items[::-1]
 
 
 def duplicates(items):
