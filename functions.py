@@ -163,7 +163,7 @@ def sign_and_parity(num):
     #Check whether num is greater than or equal to zero, accordingly decide sign 
     #Check remainder on dividing by two using mod operator, accordingly decide even or odd 
     #Append results to a list
-    
+    """Prints sign and parity of input integer"""
 
     sign_parity=[]
 
@@ -192,6 +192,13 @@ def sign_and_parity(num):
 # 1. Write a function called full_title that takes a name and a job title as
 #    parameters, making it so the job title defaults to "Engineer" if a job
 #    title is not passed in. Return the person's title and name in one string.
+
+def full_title(name,job="Engineer"):
+    """Return the person's name and job title in one string, defaulting to Engineer if not specified"""
+    #Concatenate the name and job and return the string
+
+    return (job + " " + name)
+
 
 # 2. Write a function called write_letter that, given a recipient name & job
 #    title and a sender name, prints the following letter:
